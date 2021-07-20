@@ -1,4 +1,7 @@
 # NIMBLE-Switchgrass 
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5116736.svg)](https://doi.org/10.5281/zenodo.5116736)
+
 This repo contains a shiny wrapper to run the NIMBLE (Numerical Integration Model based on machine Learning of crop model Ensembles) emulator for predicting yields and soil carbon sequestration of bioenergy switchgrass in the US Midwest.
 
 ![](tool.png)
