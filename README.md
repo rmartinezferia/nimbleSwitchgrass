@@ -23,7 +23,7 @@ install.packages(c("shiny","leaflet","shinythemes","dplyr","ggplot2",
 
 ## Data inputs
 
-The `data/spatial` folder contains all the weather/soil inputs needed to run the emulator, aggregated to the 0.01 degree spatial resolution. 
+The `_data/spatial` folder contains all the weather/soil inputs needed to run the emulator, aggregated to the 0.01 degree spatial resolution. 
 
 ![](coverage.png)
 
