@@ -126,7 +126,7 @@ server <- function(input, output, session) {
                FertilizerDOY =  yday(input$myFertilizerDOY),
                HarvestDOY = yday(input$myHarvestDOY),
                HarvestNum = Year - PlantYear + 1,
-               FertilizerRate = ifelse(HarvestNum <= 2, 0, input$myFertilizerRate)) %>% 
+               FertilizerRate = ifelse(HarvestNum <= 2, 0, input$myFertilizerRate*1.12)) %>% 
         filter(HarvestNum %in% 1:input$myYears)
       
       print(keys_to_run)
@@ -154,7 +154,7 @@ server <- function(input, output, session) {
             labs(y = "Predicted productivity (US tons per acre)",
                  x = "Year", fill = "Annual rainfall (inches)") + 
             coord_cartesian(expand = T) + 
-            ggthemes::theme_few()
+            theme_classic()
           
           
         }) 
@@ -171,7 +171,7 @@ server <- function(input, output, session) {
             labs(y = "Predicted soil C sequestration\n(Metric tons C per acre)",
                  x = "Year", fill = "Annual rainfall (inches)") + 
             coord_cartesian(expand = T) + 
-            ggthemes::theme_few()
+            theme_classic()
           
         }) 
         
